@@ -92,3 +92,49 @@ int main()
 	system("Pause");
 	return 0;
 }
+4.
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(0, "RU");
+	int n, m;
+	cout << "Введите количество взрослых и дететей в автобусе: " << endl;
+	cin >> n >> m;
+
+	if (n > 0)
+	{
+		if (m-n > 0) cout << n + m-n << endl;
+		else cout << n << endl;
+		cout << n + m - 1 << endl;
+	}
+	else cout << "Impossible!" << endl;
+
+	system("Pause");
+	return 0;
+}
+5.
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(0, "RU");
+	int const n=5;
+	int A[n][n];
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < 5; j++)
+			cin >> A[i][j];
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < 5; j++)
+			if (A[i][j] == A[j][i]&&A[i][j]==1) k++;
+	for (int i = 0; i < n; i++)
+	{
+		cout << endl;
+		for (int j = 0; j < n; j++)
+			cout << A[i][j] << "\t";
+	}
+	cout << k/2;
+	system("Pause");
+	return 0;
+}
+6.
