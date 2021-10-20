@@ -271,6 +271,12 @@ int main()
 
 10.Бинарные числа (https://acmp.ru/index.asp?main=task&id_task=778)
 
+11.Кастинг (https://acmp.ru/index.asp?main=task&id_task=925)
+
+12.Лифт (https://acmp.ru/index.asp?main=task&id_task=336)
+
+
+
 1.
    
 #include<iostream>
