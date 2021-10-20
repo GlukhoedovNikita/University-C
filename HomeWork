@@ -52,3 +52,43 @@ int main()
 	return 0;
 }
 
+2.
+#include<iostream>
+using namespace std;
+int nod(int a, int b)
+{
+	return b ? nod(b, a%b) : a;
+}
+int main()
+{
+	setlocale(0, "RU");
+	int a, b;
+	cout << "Введите два числа: " << endl;
+	cin >> a >> b;
+	cout << nod(a, b) << endl;
+
+	system("Pause");
+	return 0;
+}
+3.
+#include<iostream>
+using namespace std;
+int nod(int a, int b)
+{
+	return b ? nod(b, a%b) : a;
+}
+int nok(int a, int b)
+{
+	return a / nod(a, b)*b;
+}
+int main()
+{
+	setlocale(0, "RU");
+	int a, b;
+	cout << "Введите два числа: " << endl;
+	cin >> a >> b;
+	cout << nok(a, b) << endl;
+
+	system("Pause");
+	return 0;
+}
