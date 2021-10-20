@@ -1,17 +1,18 @@
 13.10.21
 
 Задание на следующую лекцию. Для начинающих:
-1. Перепись
- (https://acmp.ru/index.asp?main=task&id_task=131)2. НОД
- (https://acmp.ru/index.asp?main=task&id_task=148)3. НОК
- (https://acmp.ru/index.asp?main=task&id_task=14)4. В автобусе
- (https://acmp.ru/index.asp?main=task&id_task=952)5. Дороги
- (https://acmp.ru/index.asp?main=task&id_task=15)6. Загадка
- (https://acmp.ru/index.asp?main=task&id_task=63)7. Временной ключ
- (https://acmp.ru/index.asp?main=task&id_task=643)8. Очередь
- (https://acmp.ru/index.asp?main=task&id_task=511)9. Последняя цифра A^B
- (https://acmp.ru/index.asp?main=task&id_task=79)10. Взвешивание
- 
+1. Перепись (https://acmp.ru/index.asp?main=task&id_task=131)
+2. НОД (https://acmp.ru/index.asp?main=task&id_task=148)
+3. НОК (https://acmp.ru/index.asp?main=task&id_task=14)
+4. В автобусе (https://acmp.ru/index.asp?main=task&id_task=952)
+5. Дороги (https://acmp.ru/index.asp?main=task&id_task=15)
+6. Загадка(https://acmp.ru/index.asp?main=task&id_task=63)
+7. Временной ключ (https://acmp.ru/index.asp?main=task&id_task=643)
+8. Очередь (https://acmp.ru/index.asp?main=task&id_task=511)
+9. Последняя цифра A^B (https://acmp.ru/index.asp?main=task&id_task=79)
+10. Взвешивание (https://acmp.ru/index.asp?main=task&id_task=762)
+
+
  1.
 #include<iostream>
 #include<map>
