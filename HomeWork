@@ -1,0 +1,53 @@
+13.10.21
+
+Задание на следующую лекцию. Для начинающих:
+1. Перепись
+ (https://acmp.ru/index.asp?main=task&id_task=131)2. НОД
+ (https://acmp.ru/index.asp?main=task&id_task=148)3. НОК
+ (https://acmp.ru/index.asp?main=task&id_task=14)4. В автобусе
+ (https://acmp.ru/index.asp?main=task&id_task=952)5. Дороги
+ (https://acmp.ru/index.asp?main=task&id_task=15)6. Загадка
+ (https://acmp.ru/index.asp?main=task&id_task=63)7. Временной ключ
+ (https://acmp.ru/index.asp?main=task&id_task=643)8. Очередь
+ (https://acmp.ru/index.asp?main=task&id_task=511)9. Последняя цифра A^B
+ (https://acmp.ru/index.asp?main=task&id_task=79)10. Взвешивание
+ 
+ 1.
+#include<iostream>
+#include<map>
+using namespace std;
+int main()
+{
+	setlocale(0, "RU");
+	int N;
+	int max = 0;
+	cout << "Введите количество человек: " << endl;
+	cin >> N;
+	map <int, int> name_age;
+	map<int, int> ::iterator it;
+	cout << "Введите возраст и пол : " << endl;
+	for (int i = 0; i < N; i++)
+	{
+		int V, S;
+		cin >> V >> S;
+		name_age[V] = S;
+	}
+	it = name_age.begin();
+	for (int i = 0; it != name_age.end(); it++, i++)
+	{
+		if (it->second == 1)
+		{
+			if (it->first >= max) max = it->first;
+		}
+	}
+	for (it = name_age.begin(); it != name_age.end(); it++)
+	{
+		int i = 1;
+		if (it->first == max && it->second == 1) cout << i << endl;
+		i++;
+	}
+
+	system("Pause");
+	return 0;
+}
+
