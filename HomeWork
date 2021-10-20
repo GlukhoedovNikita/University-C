@@ -138,3 +138,113 @@ int main()
 	return 0;
 }
 6.
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(0, "RU");
+	int x, y;
+	cout << "Введите два числа: " << endl;
+	cin >> x >> y;
+	for(int i=0;i<=1000;i++)
+		for (int j = 0; j <= 1000; j++)
+			if (i + j == x && i*j == y)
+			{
+				cout << i << " " << j << endl;
+				system("Pause");
+				return 0;
+			}
+}
+7.
+#include<iostream>
+using namespace std;
+int a(int n)
+{
+	int k = 0;
+	while (n)
+	{
+		if (n % 10 == 1) k++;
+		n /= 10;
+	}
+	return k;
+}
+int dec2bin(int num)
+{
+	int bin = 0, k = 1;
+
+	while (num)
+	{
+		bin += (num % 2) * k;
+		k *= 10;
+		num /= 2;
+	}
+	return bin;
+}
+int main()
+{
+	setlocale(0, "RU");
+	int n;
+	cin >> n;
+	cout << n+a(dec2bin(n)) << endl;
+	system("Pause");
+	return 0;
+}
+8.
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(0, "RU");
+	int K;
+	cout << "Введите номер Василия: " << endl;
+	cin >> K;
+	int a, b;
+	if (K % 2 != 0)
+	{
+		a = 5+((K - 1) / 2) * 10;
+		b = ((K - 1) / 2) * 10;
+		if (a > 720)
+		{
+			cout << "No" << endl;
+			system("Pause");
+			return 0;
+		}
+	}
+	else
+	{
+		a = 5+((K - 1) / 2) * 10;
+		b =(int((K - 1) / 2) + 1) * 10;
+		if (a > 715)
+		{
+			cout << "No" << endl;
+			system("Pause");
+			return 0;
+		}
+	}
+	cout << int(a / 60) << " " << a % 60 << endl;
+	system("Pause");
+	return 0;
+}
+9.
+#include<iostream>
+#include<cmath>
+using namespace std;
+int abracadabra(int n)
+{
+	while (n > 0)
+	{
+		if (n < 10) return n;
+		n = n % 10;
+	}
+}
+int main()
+{
+	setlocale(0, "RU");
+	int a, b, n;
+	cout << "Введите число и степень: " << endl;
+	cin >> a >> b;
+	cout << abracadabra(pow(a, b)) << endl;
+	system("Pause");
+	return 0;
+}
+10. --------- Не работает ссылка ----------
